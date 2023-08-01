@@ -1,0 +1,74 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Cabin&family=Roboto+Condensed:wght@400;700&display=swap");
+
+html {
+  font-size: 100%;
+} /*16px*/
+
+/* alerts */
+.alert {
+  padding: 0.375rem 0.75rem;
+  margin-bottom: 1rem;
+  border-color: transparent;
+  border-radius: var(--borderRadius);
+  text-align: center;
+  letter-spacing: var(--letterSpacing);
+}
+
+.alert-danger {
+  color: #842029;
+  background: #f8d7da;
+}
+.alert-success {
+  color: #0f5132;
+  background: #d1e7dd;
+}
+/* Bokking History */
+.booking-container {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-wrap: wrap;
+  width: 90vw;
+  max-width: 800px;
+  padding: 2em 1.5em;
+  margin: 1em auto;
+  border-radius: 0.5em;
+  border-style: solid;
+  border-color: #f55;
+  color: #f55;
+  background-color: #fda;
+}
+
+a {
+  text-decoration: none;
+}
+
+.booking-card {
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgb(190, 37, 37, 0.8);
+  transition: 0.3s;
+  width: 45%;
+  margin: 16px 16px;
+}
+
+.booking-card:hover {
+  box-shadow: 0 8px 16px 0 rgb(190, 37, 37, 0.8);
+}
+
+.booking-properties {
+  font-weight: 700;
+}
+.booking-values {
+  text-align: end;
+}
+
+.booking-card p {
+  display: flex;
+  justify-content: space-between;
+}
